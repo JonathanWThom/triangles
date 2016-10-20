@@ -1,15 +1,4 @@
-#equilateral{
-  display: none;
-}
-
-#isosceles {
-  display: none;
-}
-
-#scalene {
-  display: none;
-}
-
-#not {
-  display: none;
+#output {
+  font-size: 18pt;
+  color: darkblue;
 }
