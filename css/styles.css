@@ -2,3 +2,18 @@
   font-size: 18pt;
   color: darkblue;
 }
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+}
+.well {
+  width:50%;
+}
+.form-control {
+  width:30%;
+  float:right;
+}
+body {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Tile_3,6.svg/2000px-Tile_3,6.svg.png);
+}

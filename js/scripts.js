@@ -10,19 +10,19 @@ var triangleTest = function (sideA, sideB, sideC) {
     alert("Must be numbers greater than 0!");
   }
   else if ((sideA === sideB) && (sideB === sideC)) {
-   triangleType = "equilateral";
+   triangleType = "Equilateral";
   }
   else if ((sideA !== sideB !== sideC) && ((sideA + sideB <= sideC)||(sideB + sideC <= sideA) || (sideA + sideC <= sideB) )){
-   triangleType = "not";
+   triangleType = "Not a Triangle";
    }
   else if ((sideA === sideB) || (sideA === sideC) || (sideB === sideC)) {
-   triangleType = "isosceles";
+   triangleType = "Isosceles";
   }
   else if (sideA !== sideB !== sideC) {
-    triangleType = "scalene";
+    triangleType = "Scalene";
   }
   else {
-    alert("something went wrong!")
+    alert("Something went wrong!")
   }
   return triangleType;
 };
@@ -35,7 +35,7 @@ $(document).ready(function() {
     var sideC = parseInt($("input#sideC").val());
 
     triangleTest(sideA, sideB, sideC);
-    $("#output").text(triangleType);
+    $("#output").text("Your triangle is "+ triangleType);
     event.preventDefault();
   });
 });
